@@ -1,14 +1,16 @@
 方法1
 #以下代码一起复制粘贴回车
+
 yum install -y wget && wget -O install.sh http://download.bt.cn/install/install.sh && echo y | sh install.sh && \
 wget -O update.sh http://download.bt.cn/install/update_pro.sh && bash update.sh pro && \
 >/www/server/panel/data/userInfo.json && \
 /etc/init.d/bt restart && /etc/init.d/bt default
-复制代码
+
 
 
 方法2
 #以下代码一起复制粘贴回车
+
 wget -O install.sh http://download.bt.cn/install/install.sh && echo y | sh install.sh && \
 wget -O update.sh http://download.bt.cn/install/update_pro.sh && bash update.sh pro && \
 cd /www/server && cp -r panel panel-bak && \
